@@ -1,0 +1,103 @@
+:root{
+  --ivory:#fbf8f1; --paper:#fffdf9; --sage:#536f5f; --sage-dark:#304f3f;
+  --line:#d9d3c8; --ink:#202522; --muted:#6e746f; --soft:#eee9df;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:Inter,Arial,sans-serif}
+a{text-decoration:none;color:inherit} button,input{font:inherit}
+.topbar{height:30px;background:#eeeae2;display:flex;justify-content:space-between;align-items:center;padding:0 5%;font-size:12px}
+.topbar div{display:flex;gap:10px}
+.site-header{position:sticky;top:0;z-index:40;background:rgba(255,253,249,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.header-inner{max-width:1200px;height:68px;margin:auto;padding:0 24px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:46px}
+.brand{font-family:"Cormorant Garamond",serif;font-weight:600;letter-spacing:.09em;font-size:29px;white-space:nowrap}
+.brand-mark{color:#718167;margin-right:10px}
+.nav{display:flex;justify-content:center;gap:28px;font-size:14px}
+.header-actions{display:flex}
+.icon-button{width:40px;height:40px;border:0;background:transparent;display:grid;place-items:center;position:relative;cursor:pointer}
+.cart-count{position:absolute;right:0;top:1px;background:var(--sage-dark);color:#fff;border-radius:50%;width:17px;height:17px;font-size:10px;display:grid;place-items:center}
+.mobile-menu{display:none}
+.search-panel{border-top:1px solid var(--line);display:flex;gap:10px;padding:12px max(24px,calc((100% - 1152px)/2));background:var(--paper)}
+.search-panel input{width:100%;border:0;outline:0;background:transparent}
+
+.hero{min-height:390px;display:grid;grid-template-columns:43% 57%;background:#f3efe7}
+.hero-content{padding:75px max(24px,calc((100vw - 1200px)/2));padding-right:36px;align-self:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--sage)}
+.hero h1{font-family:"Cormorant Garamond",serif;font-size:45px;line-height:.98;margin:12px 0 18px;font-weight:600}
+.hero p:not(.eyebrow){color:#4f5550;line-height:1.6;max-width:520px}
+.hero-image{background:url("/src/assets/hero-emerald.jpg") center/cover no-repeat}
+.btn{display:inline-flex;margin-top:14px;padding:13px 26px;border:1px solid transparent;cursor:pointer}
+.btn.primary{background:var(--sage-dark);color:white}
+
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border-bottom:1px solid var(--line)}
+.benefits div{height:66px;display:flex;justify-content:center;align-items:center;gap:12px;border-right:1px solid var(--line);font-family:"Cormorant Garamond",serif;font-size:16px}
+.section{max-width:1200px;margin:auto;padding:70px 28px 36px}
+.section-heading{text-align:center;margin:0 auto 28px}
+.section-heading h2{font-family:"Cormorant Garamond",serif;font-size:42px;margin:0 0 6px;font-weight:600}
+.section-heading p{margin:0;color:var(--muted)}
+.ornamental h2:before,.ornamental h2:after{content:"";display:inline-block;width:120px;border-top:1px solid #a9aaa4;vertical-align:middle;margin:0 28px}
+.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:25px}
+.filters button{border:1px solid var(--line);background:var(--paper);padding:8px 14px;color:var(--muted);cursor:pointer}
+.filters button.active{background:var(--sage-dark);color:#fff;border-color:var(--sage-dark)}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.product-card{background:var(--paper);border:1px solid var(--line)}
+.product-image-wrap{height:245px;position:relative;overflow:hidden;background:#eee9df}
+.product-image{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:12px;top:12px;background:#fff;padding:7px 9px;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--sage-dark)}
+
+.product-info{padding:16px}
+.product-kicker{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin:0}
+.product-info h3{font-family:"Cormorant Garamond",serif;font-size:23px;line-height:1.05;min-height:48px;margin:9px 0 15px}
+.product-bottom{display:flex;justify-content:space-between;align-items:center}
+.product-bottom button{border:0;background:#e0e8e1;color:var(--sage-dark);padding:9px 12px;display:flex;gap:7px;align-items:center}
+
+.category-section{max-width:1200px;margin:0 auto;padding:0 28px 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.category-section article{background:var(--paper);border:1px solid var(--line);text-align:center;padding-bottom:17px}
+.category-section img{width:100%;height:150px;object-fit:cover}
+.category-section h3{font-family:"Cormorant Garamond",serif;font-size:22px;margin:12px 0 5px}
+.category-section a{font-size:13px;color:var(--sage-dark)}
+
+.gem-explorer{padding:55px 5% 75px;background:#f5f0e8}
+.gem-grid{max-width:1150px;margin:32px auto 0;display:grid;grid-template-columns:repeat(8,1fr);gap:22px}
+.gem-item{text-align:center;font-size:13px}
+footer{max-width:1200px;margin:auto;padding:45px 28px;display:flex;justify-content:space-between;align-items:end;color:var(--muted)}
+footer p,footer small{font-size:12px}
+footer .brand{color:var(--ink)}
+
+@media(max-width:950px){
+  .nav{display:none}.mobile-menu{display:grid}.header-inner{grid-template-columns:auto 1fr auto;gap:15px}.brand{justify-self:center}
+  .nav.open{display:flex;position:absolute;left:0;right:0;top:68px;background:var(--paper);padding:22px;flex-direction:column;border-bottom:1px solid var(--line)}
+  .product-grid,.category-section{grid-template-columns:repeat(2,1fr)}
+  .gem-grid{grid-template-columns:repeat(4,1fr)}
+  .ornamental h2:before,.ornamental h2:after{width:55px;margin:0 14px}
+}
+@media(max-width:650px){
+  .topbar div{display:none}.topbar{justify-content:center}
+  .header-inner{padding:0 12px}.brand{font-size:20px}.brand-mark{margin-right:4px}
+  .hero{grid-template-columns:1fr}.hero-content{padding:48px 22px}.hero-image{height:310px}.hero h1{font-size:38px}
+  .benefits{grid-template-columns:1fr 1fr}.benefits div{font-size:14px}
+  .section{padding:55px 16px 30px}.section-heading h2{font-size:34px}
+  .ornamental h2:before,.ornamental h2:after{display:none}
+  .product-grid,.category-section{grid-template-columns:1fr}
+  .category-section{padding:0 16px 55px}
+  .gem-grid{grid-template-columns:repeat(2,1fr)}
+  footer{flex-direction:column;align-items:flex-start;gap:20px}
+}
+
+
+/* Real local gemstone photography for Explore Gemstones */
+.gem-photo-wrap{
+  width:110px;
+  height:115px;
+  margin:0 auto 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+}
+.gem-photo{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
