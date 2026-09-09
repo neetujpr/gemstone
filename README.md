@@ -1,11 +1,29 @@
-# AURELIA GEMS — React Ecommerce
+# AURELIA GEMS — React / Vite
 
-Updated to match the approved cream / sage / luxury gemstone design.
+This version fixes the production image issue on Vercel.
 
-All key product and hero imagery is stored locally in `src/assets`, so the website no longer depends on broken Google or third-party image URLs.
+## Important fix
+All website images are now stored in:
 
-Run:
+`public/assets/`
+
+and referenced as:
+
+`/assets/image-name.jpg`
+
+Vite copies everything inside `public/` directly into the production build, so the images work both locally and on Vercel.
+
+## Run locally
+
 ```bash
 npm install
 npm run dev
 ```
+
+## Build
+
+```bash
+npm run build
+```
+
+Deploy the project root to Vercel. Framework preset: **Vite**.

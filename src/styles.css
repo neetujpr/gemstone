@@ -25,7 +25,7 @@ a{text-decoration:none;color:inherit} button,input{font:inherit}
 .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--sage)}
 .hero h1{font-family:"Cormorant Garamond",serif;font-size:45px;line-height:.98;margin:12px 0 18px;font-weight:600}
 .hero p:not(.eyebrow){color:#4f5550;line-height:1.6;max-width:520px}
-.hero-image{background:url("/src/assets/hero-emerald.jpg") center/cover no-repeat}
+.hero-image{background:url("/assets/hero-emerald.jpg") center/cover no-repeat}
 .btn{display:inline-flex;margin-top:14px;padding:13px 26px;border:1px solid transparent;cursor:pointer}
 .btn.primary{background:var(--sage-dark);color:white}
 

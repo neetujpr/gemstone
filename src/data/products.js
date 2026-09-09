@@ -12,7 +12,7 @@ export const products = [
     category: "gemstone",
     price: 7500,
     color: "Pink",
-    image: "/src/assets/rose-quartz-clean.jpg",
+    image: "/assets/rose-quartz-clean.jpg",
     badge: "New"
   },
   {
@@ -21,7 +21,7 @@ export const products = [
     category: "gemstone",
     price: 9800,
     color: "Black",
-    image: "/src/assets/black-onyx-clean.jpg"
+    image: "/assets/black-onyx-clean.jpg"
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const products = [
     category: "jewelry",
     price: 12500,
     color: "Green",
-    image: "/src/assets/emerald-pendant-clean.jpg",
+    image: "/assets/emerald-pendant-clean.jpg",
     badge: "Bestseller"
   },
   {
@@ -38,7 +38,7 @@ export const products = [
     category: "jewelry",
     price: 14800,
     color: "Green",
-    image: "/src/assets/emerald-earrings-clean.jpg"
+    image: "/assets/emerald-earrings-clean.jpg"
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const products = [
     category: "gemstone",
     price: 6400,
     color: "Multi",
-    image: "/src/assets/mixed-gemstones.jpg"
+    image: "/assets/mixed-gemstones.jpg"
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ export const products = [
     category: "jewelry",
     price: 18900,
     color: "Blue",
-    image: "/src/assets/sapphire-ring.jpg",
+    image: "/assets/sapphire-ring.jpg",
     badge: "Premium"
   },
   {
@@ -62,7 +62,7 @@ export const products = [
     name: "Sacred Ganesha & Buddha Set",
     category: "idol",
     price: 8900,
-    image: "/src/assets/god-idols.jpg",
+    image: "/assets/god-idols.jpg",
     badge: "Sacred"
   },
   {
@@ -71,6 +71,6 @@ export const products = [
     category: "jewelry",
     price: 7200,
     color: "Multi",
-    image: "/src/assets/gem-bracelet.jpg"
+    image: "/assets/gem-bracelet.jpg"
   }
 ];

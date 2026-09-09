@@ -6,14 +6,14 @@ import ProductGrid from "./components/ProductGrid";
 import { categories, products } from "./data/products";
 
 const gemNames = [
-  { name: "Emerald", image: "/src/assets/gem-emerald.jpg" },
-  { name: "Blue Sapphire", image: "/src/assets/gem-blue-sapphire.jpg" },
-  { name: "Ruby", image: "/src/assets/gem-ruby.jpg" },
-  { name: "Citrine", image: "/src/assets/gem-citrine.jpg" },
-  { name: "Amethyst", image: "/src/assets/gem-amethyst.jpg" },
-  { name: "Rose Quartz", image: "/src/assets/gem-rose-quartz.jpg" },
-  { name: "Aquamarine", image: "/src/assets/gem-aquamarine.jpg" },
-  { name: "Black Onyx", image: "/src/assets/gem-black-onyx.jpg" },
+  { name: "Emerald", image: "/assets/gem-emerald.jpg" },
+  { name: "Blue Sapphire", image: "/assets/gem-blue-sapphire.jpg" },
+  { name: "Ruby", image: "/assets/gem-ruby.jpg" },
+  { name: "Citrine", image: "/assets/gem-citrine.jpg" },
+  { name: "Amethyst", image: "/assets/gem-amethyst.jpg" },
+  { name: "Rose Quartz", image: "/assets/gem-rose-quartz.jpg" },
+  { name: "Aquamarine", image: "/assets/gem-aquamarine.jpg" },
+  { name: "Black Onyx", image: "/assets/gem-black-onyx.jpg" },
 ];
 
 export default function App() {
@@ -53,19 +53,19 @@ export default function App() {
 
         <section id="categories" className="category-section">
           <article>
-            <img src="/src/assets/mixed-gemstones.jpg" alt="Mixed gemstones"/>
+            <img src="/assets/mixed-gemstones.jpg" alt="Mixed gemstones"/>
             <h3>Gemstones</h3><a href="#gemstones">Explore →</a>
           </article>
           <article>
-            <img src="/src/assets/sapphire-ring.jpg" alt="Gemstone jewelry"/>
+            <img src="/assets/sapphire-ring.jpg" alt="Gemstone jewelry"/>
             <h3>Gemstone Jewelry</h3><a href="#shop">Shop Now →</a>
           </article>
           <article>
-            <img src="/src/assets/god-idols.jpg" alt="God idols"/>
+            <img src="/assets/god-idols.jpg" alt="God idols"/>
             <h3>God Idols</h3><a href="#shop" onClick={() => setCategory("idol")}>View Collection →</a>
           </article>
           <article>
-            <img src="/src/assets/gem-bracelet.jpg" alt="Gemstone accessories"/>
+            <img src="/assets/gem-bracelet.jpg" alt="Gemstone accessories"/>
             <h3>Gemstone Accessories</h3><a href="#shop">Discover →</a>
           </article>
         </section>
